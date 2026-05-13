@@ -1,0 +1,118 @@
+.basket {
+    padding: 150px 300px;
+    
+}
+
+.basket-title {
+    color: rgb(31, 32, 38);
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: .3px;
+}
+
+.basket-title span {
+    color: rgb(126, 129, 140);
+    font-size: 24px;
+}
+
+.basket-container {
+    width: 750px;
+    margin-top: 30px;
+    border-radius: 7px;
+    height: auto;
+    padding: 12px;
+    border: 2px solid rgb(134, 131, 131);
+}
+
+/* Basket Product styles */
+
+.basket-product {
+    border-bottom: 1px solid rgb(172, 170, 170);
+    padding-bottom: 5px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 29px;
+}
+
+.basket-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-img img {
+    margin-left: 19%;
+    margin-top: 5%;
+    height: 100px;
+    width: 100px;
+}
+
+
+.box-img h2 {
+    font-weight: 500;
+    color: rgb(31, 32, 38);
+    font-size: 18px;
+
+}
+
+.box-info {
+    padding-top: 30px;
+}
+
+.box-info-top p {
+    color: rgb(31, 32, 38);
+    font-weight: 400;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+.box-info-bottom {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.box-info-bottom p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(126, 129, 140);
+}
+
+.box-info-bottom p span {
+    color: rgb(31, 32, 38);
+}
+
+.box-prices {
+    padding-top: 30px;
+}
+
+.delete {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 35px;
+    color: gray;
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+}
+
+.delete:hover {
+    color: rgb(56, 55, 55);
+}
+
+.delete p {
+    color: rgb(77, 79, 89);
+}
+
+.box-prices h3 .first{
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: line-through;
+    padding-left: 10px;
+}
+
+.box-prices h3 {
+    font-size: 29px;
+    color: rgb(91, 89, 89);
+}
+

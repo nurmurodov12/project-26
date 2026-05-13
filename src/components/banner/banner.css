@@ -1,0 +1,142 @@
+.banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 1px 300px;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(270deg, #0f172a, #1e293b, #334155, #0f172a);
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.banner-title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #D1D5DB;
+    padding-bottom: 10px;
+}
+
+.banner h1 {
+    font-weight: 500;
+    font-size: 72px;
+    color: #FFFFFFFF;
+}
+
+.banner-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 5px;
+    color: #E5E7EB;
+}
+
+.banner-btns {
+    padding: 35px 1px;
+    padding-bottom: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.banner-btns-first {
+    width: 194px;
+    height: 48px;
+    background-color: #374151;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.banner-btns-second {
+    border-radius: 6px;
+    background-color: rgba(255, 0, 0, 0);
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 167px;
+    height: 50px;
+    border: 1px #FFFFFF solid;
+}
+
+.banner-statictic h2 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.banner-statictics {
+    display: flex;
+    gap: 55px;
+}
+
+.banner-statictic p {
+    color: #D1D5DB;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media(max-width: 992px) {
+    .banner {
+        padding: 1px 200px;   
+    }
+    .banner h1 {
+        font-size: 50px;
+    }
+
+    .banner-subtitle {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .banner {
+        padding: 1px 100px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .banner h1 {
+        font-size: 40px;
+    }
+    
+    .banner {
+        padding: 1px 20px;
+        align-items: center;
+        text-align: center;
+    } 
+
+    .banner-subtitle {
+        font-size: 15px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1{
+        font-size: 25px;
+    }
+
+    .banner-subtitle {
+        font-size: 13px;
+    }
+
+    .banner {
+        padding: 1px 10px;
+    }
+}
+
