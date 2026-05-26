@@ -1,0 +1,158 @@
+.footer {
+    padding: 45px 165px;
+    width: 100%;
+    height: auto;
+    background-color: #1F2937;
+}
+
+.footer-title h2 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+
+.footer-title p {
+    font-weight: 400;
+    color: #D1D5DB;
+    font-size: 14px;
+    width: 261px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-top-social {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.footer-top-social div {
+    width: 40px;
+    height: 40px;
+    background-color: #374151;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.footer-top {
+    display: flex;
+    gap: 35px;
+    border-bottom: 2px solid #36364e;
+    padding-bottom: 55px;
+
+}
+
+.footer-info ul h3 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-bottom: 13px;
+}
+
+.footer-info ul {
+    list-style: none;
+}
+
+.footer-info ul li a{
+    font-weight: 400;
+    font-size: 14px;
+    color: #b5b5b8;
+    line-height: 30px;
+}
+
+.footer-info ul li {
+    color: #b5b5b8;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.footer-infos {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    align-items: center;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-bottom-left p{
+    font-weight: 400;
+    color: #9CA3AF;
+    font-size: 14px;
+
+    
+}
+
+.footer-bottom-right ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom-right ul a{
+    font-weight: 400;
+    color: #9CA3AF;
+    font-size: 14px;
+}
+
+.nav-users {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fa-user {
+    font-size: 20px;
+}
+
+@media(max-width: 992px) {
+    .footer {
+        padding: 45px 50px;
+    }
+}
+
+@media(max-width: 768px) {
+    .footer {
+        padding: 45px 30px;
+    }
+
+    .footer-infos {
+        gap: 40px;
+    }
+}
+
+@media(max-width: 640px ){
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        padding: 20px 5px;
+    }
+
+    .footer-bottom {
+        gap: 50px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .footer-infos {
+        gap: 25px;
+    }
+
+    .footer-bottom {
+        gap: 20px;
+    }
+}

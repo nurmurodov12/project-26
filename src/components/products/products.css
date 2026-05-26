@@ -90,6 +90,13 @@ a {
 .product {
     width: 405px;
     height: auto;
+    border-radius: 15px;
+    transition: all ease-in .2s;
+    padding-bottom: 10px;
+}
+
+.product:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .product-top {

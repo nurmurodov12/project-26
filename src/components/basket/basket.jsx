@@ -2,18 +2,20 @@ import React, { useContext } from "react";
 import "./basket.css";
 import { BasketContext } from "../../context/basketContext";
 import BasketProduct from "./basketProduct";
+import emptyBasket from "../../images/basketempty.png";
+import { Link } from "react-router-dom";
 
 const Basket = () => {
-  const { basket } = useContext(BasketContext);
+  const { basket } = useContext(BasketContext)
   const { setBasket } = useContext(BasketContext);
 
   const deleteProduct = (id) => {
     const deleteItem = basket.filter((val) => {
-      return val.id !== id
-    })
+      return val.id !== id;
+    });
 
-    setBasket(deleteItem)
-  }
+    setBasket(deleteItem);
+  };
 
   return (
     <div className="container basket">
@@ -41,7 +43,13 @@ const Basket = () => {
           })}
         </div>
       ) : (
-        ""
+        <div className="empty-div">
+          <img src={emptyBasket} alt="" />
+          <h2>Your cart is currently empty</h2>
+          <Link to={"/"}>
+            <button>Home page</button>
+          </Link>
+        </div>
       )}
     </div>
   );

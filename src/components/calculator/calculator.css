@@ -4,7 +4,6 @@
     margin-bottom: 10px;
     display: flex;
     gap: 40px;
-
 }
 
 
@@ -215,7 +214,7 @@
 
 @media (max-width: 480px) {
     .calculator-subtitle {
-        width: 380px;
+        width: 350px;
     }
 
     .calculator-box {
@@ -224,12 +223,16 @@
         margin-top: 50px;
     }
 
+    .box-div-div {
+        width: 320px;
+    }
+
     .box-div-p {
         text-align: center;
     }
 
     .box-btn {
-        width: 365px;
+        width: 325px;
     }
     .sizes {
         grid-template-columns: auto ;

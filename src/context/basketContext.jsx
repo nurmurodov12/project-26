@@ -10,7 +10,7 @@ const BasketProvider = ({ children }) => {
   const addToBasket = (product) => {
     setBasket([...basket, product]);
   };
-
+  
   return (
     <BasketContext.Provider value={{ basket, setBasket,addToBasket }}>
       {children}

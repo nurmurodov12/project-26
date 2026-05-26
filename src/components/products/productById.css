@@ -72,3 +72,47 @@ button p {
 button:hover {
     opacity: 0.8;
 }
+
+
+@media(max-width: 992px) {
+    .by-id {
+        padding: 200px 80px;
+    }
+
+
+}
+
+@media(max-width: 768px) {
+    .by-id-div {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .by-id-img h1 {
+        font-size: 24px;
+    }
+
+    .by-id-img h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .by-id {
+        padding: 100px 50px;
+    }
+}
+
+@media(max-width: 480px) {
+    .by-id {
+        padding: 190px 30px;
+    }
+
+    .by-id-img img {
+        width: 340px;
+    }
+
+    .by-id-img h2 {
+        width: 350px;
+    }
+}

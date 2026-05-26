@@ -116,3 +116,77 @@
     color: rgb(91, 89, 89);
 }
 
+.empty-div {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.empty-div img {
+    width: 150px;
+}
+.empty-div h2 {
+    font-size: 24px;
+    color: rgb(31, 32, 38) ;
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+.empty-div button {
+    width: 100px;
+    height: 38px;
+    border-radius: 4px;
+    /* padding: ; */
+    background-color: rgb(198, 196, 196);
+    color: black;
+    letter-spacing: .2px;
+}
+
+@media(max-width: 992px) {
+    .basket {
+        padding: 150px 150px;
+    }
+}
+
+@media(max-width: 768px) {
+    .basket {
+        padding: 150px 40px;
+
+        
+    }
+
+    .basket-container {
+        width: 700px;        
+    }
+}
+
+@media(max-width: 640px) {
+    .basket-container {
+        width: 550px;
+    }
+
+    .basket-box {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .box-img img {
+        width: 150px;
+        height: 120px;
+
+    }
+
+}
+
+@media(max-width: 480px) {
+    .basket-container {
+        width: 315px;
+    }
+
+    .empty-div {
+        padding-top: 50px;
+    }
+}

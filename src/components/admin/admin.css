@@ -1,0 +1,245 @@
+.admin {
+    padding: 150px 45%;
+
+}
+
+
+.form-login-and-parol {
+    margin-left: -80px;
+}
+
+.group {
+    display: flex;
+    width: 200px;
+    line-height: 30px;
+    align-items: center;
+    position: relative;
+    max-width: 200px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.input {
+    width: 140%;
+    height: 45px;
+    line-height: 30px;
+    padding: 0 5rem;
+    padding-left: 3rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    background-color: #f8fafc;
+    /* color: #0d0c22; */
+    transition: .5s ease;
+}
+
+.input::placeholder {
+    color: #94a3b8;
+    width: 150px;
+}
+
+.input:focus,
+.input:hover {
+    outline: none;
+    border-color: rgba(129, 140, 248);
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: none;
+    width: 1rem;
+    height: 1rem;
+}
+
+.login-title {
+    font-size: 25px;
+    width: 290px;
+    text-align: center;
+    color: gray;
+    font-weight: 400;
+}
+
+
+.btn-class-name {
+    --primary: 255, 90, 120;
+    --secondary: 150, 50, 60;
+    width: 60px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    outline: 10px solid rgb(var(--primary), .5);
+    border-radius: 100%;
+    position: relative;
+    transition: .3s;
+    margin-left: 110px;
+    margin-top: 25px;
+}
+
+.btn-class-name .back {
+    background: rgb(var(--secondary));
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-class-name .front {
+    background: linear-gradient(0deg, rgba(var(--primary), .6) 20%, rgba(var(--primary)) 50%);
+    box-shadow: 0 .5em 1em -0.2em rgba(var(--secondary), .5);
+    border-radius: 100%;
+    position: absolute;
+    border: 1px solid rgb(var(--secondary));
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: inherit;
+    transform: translateY(-15%);
+    transition: .15s;
+    color: rgb(var(--secondary));
+}
+
+.btn-class-name:active .front {
+    transform: translateY(0%);
+    box-shadow: 0 0;
+}
+
+.new-product-title {
+    width: 200px;
+    font-weight: 400;
+    color: rgb(93, 91, 91);
+    margin-left: 35px;
+}
+
+.new-product-form {
+    width: 550px;
+    height: auto;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: grid;
+    margin-left: -150px;
+    grid-template-columns: auto auto;
+}
+
+.admin-container {
+    width: 150%;
+    justify-content: space-between;
+}
+
+.new-input {
+    padding: 15px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+
+}
+
+.add-product {
+    margin-left: 50%;
+    background-color: #a9a9a9;
+}
+
+.add-product:active {
+    opacity: 0.5;
+}
+
+.add-product:hover {
+    background: #a9a9a9;
+}
+
+.admin-right {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-product {
+    width: 190%;
+    margin-left: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.admin-product h3 {
+    width: 550px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(92, 74, 115);
+}
+
+#delete {
+    color: red;
+    cursor: pointer;
+}
+
+.admin-product p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.incorrect {
+    color: red;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 75px;
+    width: 550px;
+}
+
+#edit {
+    color: green;
+    cursor: pointer;
+}
+
+@media(max-width: 480px) {
+    .admin {
+        padding: 150px 30%;
+    }
+
+    .admin-left {
+        padding-left: 40px;
+    }
+    .new-input {
+        width: 175px;
+    }
+    .new-product-form {
+        display: grid;
+        width: 390px;
+        grid-template-columns: auto auto;
+        padding: 25px 10px;
+        padding-right: 150px;
+    }
+
+    .new-product-title {
+        margin-left: -40px;
+    }
+
+    .admin-product {
+        width: 350px;
+        margin-left: -100px;
+    }
+}

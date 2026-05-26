@@ -13,7 +13,7 @@ const BasketProduct = ({
   price,
   deleteProduct
 }) => {
-  
+   
   return (
     <div className="basket-product">
       <div className="basket-box">

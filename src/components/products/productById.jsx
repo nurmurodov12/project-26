@@ -1,12 +1,18 @@
-import React, { useActionState, useEffect, useState } from "react";
+import React, { useActionState, useContext, useEffect, useState } from "react";
 import { data, useParams } from "react-router-dom";
 import "./productById.css";
+import { BasketContext } from "../../context/basketContext";
 
 const ProductById = () => {
   const params = useParams();
 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+  let obj = {}
+
+  const {addToBasket} = useContext(BasketContext)
+
+
 
   useEffect(() => {
     const dataJson = async () => {
@@ -26,8 +32,20 @@ const ProductById = () => {
     <div className="container by-id">
       {loading ? <h1>Loading...</h1> : ""}
       {data.map((val) => {
+        obj = {
+          id: val.id,
+          title: val.title,
+          image: val.image,
+          description: val.description,
+          material: val.material,
+          size: val.size,
+          finish: val.finish,
+          color: val.color,
+          price: val.price
+        }
+        
         return (
-          <div className="by-id-div">
+          <div className="by-id-div" key={val.id}>
             <div className="by-id-img">
               <h1>{val.title}</h1>
               <img src={val.image} alt="" />
@@ -64,7 +82,7 @@ const ProductById = () => {
                 <h3>${Math.floor(Math.random() * 100)}</h3>
               </div>
 
-              <button>
+              <button onClick={() => addToBasket(obj)}>
                 <p>Added bascket</p>
               </button>
             </div>
