@@ -12,8 +12,7 @@ const ProductById = () => {
 
   const {addToBasket} = useContext(BasketContext)
 
-
-
+  
   useEffect(() => {
     const dataJson = async () => {
       setLoading(true);

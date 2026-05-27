@@ -41,7 +41,7 @@ const Product = ({
 
         <div className="product-bottom">
           <h2 className="product-title">{title}</h2>
-          <p className="product-description">{description}</p>
+          <p className="product-description">{description.length > 87 ? <p>{description.slice(0, 87)}...</p> : <p>{description}</p>}</p>
 
           <div className="product-sizes">
             <div>
@@ -53,12 +53,12 @@ const Product = ({
 
             <div>
               <p className="product-size-text">Finish</p>
-              <p className="product-size">{finish}</p>
+              <p className="product-size">{finish.charAt(0).toUpperCase() + finish.slice(1, finish.length)}</p>
             </div>
 
             <div>
               <p className="product-size-text">Color</p>
-              <p className="product-size">{color}</p>
+              <p className="product-size">{color.charAt(0).toUpperCase() + color.slice(1, color.length)}</p>
             </div>
           </div>
 

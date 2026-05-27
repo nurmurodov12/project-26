@@ -16,6 +16,7 @@ const Admin = () => {
   const [finish, setFinish] = useState("");
   const [color, setColor] = useState("");
   const [price, setPrice] = useState("");
+
   const [data, setData] = useState([]);
   const [incorrectLogin, setIncorrectLogin] = useState(false);
 
@@ -61,23 +62,37 @@ const Admin = () => {
   async function addNewProduct(e) {
     e.preventDefault();
 
-    await fetch("https://69f7a559dd0c226688eddaed.mockapi.io/Products", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(addObj),
-    });
+    if (
+      title !== "" &&
+      image !== "" &&
+      description !== "" &&
+      material !== "" &&
+      sizeWidth !== "" &&
+      sizeHeight !== "" &&
+      finish !== "" &&
+      color !== "" &&
+      price !== ""
+    ) {
+      await fetch("https://69f7a559dd0c226688eddaed.mockapi.io/Products", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(addObj),
+      });
 
-    setTitle("");
-    setImage("");
-    setDescription("");
-    setMaterial("");
-    setSizeHeight("");
-    setSizeWidth("");
-    setFinish("");
-    setColor("");
-    setPrice("");
+      setTitle("");
+      setImage("");
+      setDescription("");
+      setMaterial("");
+      setSizeHeight("");
+      setSizeWidth("");
+      setFinish("");
+      setColor("");
+      setPrice("");
+    } else {
+      alert("Please all the inputs fill")
+    }
   }
 
   async function deleteProdcut(id) {
@@ -108,6 +123,7 @@ const Admin = () => {
       },
     );
   }
+  
 
   return (
     <div className="container admin">
