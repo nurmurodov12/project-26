@@ -38,7 +38,10 @@ const Admin = () => {
 
   function submitLoginAndParol(e) {
     e.preventDefault();
-    if (login.toLowerCase() === "admin" && pasword === "temur21") {
+    if (
+      login.toLowerCase().trim() === "admin" &&
+      pasword.trim() === "temur21"
+    ) {
       setIsAuth(true);
     } else {
       setIncorrectLogin(true);
@@ -91,7 +94,7 @@ const Admin = () => {
       setColor("");
       setPrice("");
     } else {
-      alert("Please all the inputs fill")
+      alert("Please all the inputs fill");
     }
   }
 
@@ -123,7 +126,6 @@ const Admin = () => {
       },
     );
   }
-  
 
   return (
     <div className="container admin">

@@ -149,10 +149,12 @@
 
 @media (max-width: 480px) {
     .footer-infos {
-        gap: 25px;
+        gap: 15px;
     }
 
     .footer-bottom {
-        gap: 20px;
+        gap: 5px;
     }
+
+    
 }
